@@ -9,4 +9,7 @@ public class Vertex<V> {
         this.data = data;
         this.adjacentVertices = new HashMap<>(); // Initialize the map of adjacent vertices
     }
+    public void addAdjacentVertex(Vertex<V> destination, double weight) {
+        adjacentVertices.put(destination, weight); // Add the adjacent vertex with the weight to the map
+    }
 }
